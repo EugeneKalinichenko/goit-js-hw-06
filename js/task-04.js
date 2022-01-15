@@ -1,14 +1,18 @@
-let counterValue = 0;
+let counterValueText = 0;
 const decrement = document.querySelector('[data-action="decrement"]');
 const increment = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('#value');
 
-const clickDecrement = decrement.addEventListener('click', () => {
-   value.textContent = --counterValue;
+
+decrement.addEventListener('click', () => {
+   counterValueText -= 1;
+   value.textContent = counterValueText;
+
 })
 
-const clickIncrement = increment.addEventListener('click', () => {
-   value.textContent = ++counterValue;
+increment.addEventListener('click', () => {
+   counterValueText += 1;
+   value.textContent = counterValueText;
 })
 
 
