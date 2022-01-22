@@ -31,3 +31,6 @@ button {
 .gallery li img {
   width: 100%;
 }
+.changecolor {
+  mix-blend-mode: overlay;
+}
