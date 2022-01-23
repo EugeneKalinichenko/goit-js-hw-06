@@ -4,15 +4,13 @@ const increment = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('#value');
 
 
-decrement.addEventListener('click', () => {
-   counterValueText -= 1;
-   value.textContent = counterValueText;
+const clickDecrement = decrement.addEventListener('click', () => {
+   value.textContent = --counterValueText;
 
 })
 
-increment.addEventListener('click', () => {
-   counterValueText += 1;
-   value.textContent = counterValueText;
+const clickIncrement =increment.addEventListener('click', () => {
+   value.textContent = ++counterValueText;
 })
 
 

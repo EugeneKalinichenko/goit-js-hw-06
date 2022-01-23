@@ -12,11 +12,11 @@ btnCreateEl.addEventListener('click', createBtnOnClick);
 function createBtnOnClick() {
   createBoxes(numberInputEl.value);
 }
-btnDestroyEl.addEventListener('click', destroyBtnOnClick);
-
-function destroyBtnOnClick() {
+btnDestroyEl.addEventListener('click', () => {
   destroyBoxes()
-}
+});
+
+
 
 function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
@@ -28,8 +28,9 @@ function createBoxes(amount) {
     boxesEL.append(boxEl);
   }
 }
-function destroyBoxes(boxes) {
+function destroyBoxes() {
   boxesEL.innerHTML = '';
+  numberInputEl.value = '';
 }
 
 

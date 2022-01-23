@@ -15,8 +15,8 @@ function onFormSumbit(event) {
         alert('Заполните все пустые поля перед отправкой')
     }
     const formData = {
-        mail,
-        password
+        email: mail,
+        password: password
     }
     console.log(formData)
     refs.form.reset();

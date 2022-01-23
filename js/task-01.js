@@ -6,10 +6,12 @@ quantityCategories.forEach(elem => {
     const firstChildTitle = elem.firstElementChild.textContent;
     console.log(`Category: ${firstChildTitle}`)
 
-    const quantityChildLastElem = elem.querySelectorAll('li')
-    console.log(`Elements: ${quantityChildLastElem.length}`)
+    const lastElementChild = elem.lastElementChild.children.length
+    console.log(`Elements: ${lastElementChild}`)
     
 })
+
+
 
 
 
